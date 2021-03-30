@@ -46,9 +46,9 @@ class Inception(nn.Module):
         return torch.cat([y1,y2,y3,y4], 1)
 
 
-class Net(nn.Module):
+class GoogLeNet(nn.Module):
     def __init__(self):
-        super(Net, self).__init__()
+        super(GoogLeNet, self).__init__()
         self.pre_layers = nn.Sequential(
             nn.Conv2d(3, 192, kernel_size=3, padding=1),
             nn.BatchNorm2d(192),
