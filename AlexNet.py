@@ -1,7 +1,5 @@
 import torch.nn as nn
 
-# nn.Sequentialで書く方法
-# ネットワーク構造が大きくなったときはこっちのほうが見やすかったりする
 class AlexNet(nn.Module):
     def __init__(self):
         super(AlexNet, self).__init__()
